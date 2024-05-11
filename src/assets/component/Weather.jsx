@@ -42,7 +42,7 @@ function Weather() {
       className="flex flex-col bg-blue-600 p-4 w-1/4 rounded-lg -xl:w-1/3 -lg:w-1/2 -md:w-3/5 -sm:w-3/4 -xsm:w-4/5 -xxsm:w-11/12"
       style={{ backgroundColor: "#a7e7ff" }}
     >
-      <h1 className=" text-3xl mb-6 font-thin  flex justify-center">
+      <h1 className=" text-3xl mb-6 font-thin -xsm:text-lg flex justify-center">
         ClearSKY
       </h1>
       <div className="flex gap-2 justify-center">
@@ -71,14 +71,14 @@ function Weather() {
               alt=""
               className=" mx-auto"
             ></img>
-            <h3 className="desc text-2xl   capitalize">
+            <h3 className="desc text-2xl -xsm:text-lg   capitalize">
               {weather.weather[0].description}
             </h3>
           </div>
-          <h1 className="text-6xl font-bold my-2 ">
+          <h1 className="text-6xl -xsm:text-4xl font-bold my-2 ">
             {weather.main.temp}&deg;C
           </h1>
-          <div className="weather-city text-2xl font-bold flex justify-center items-center">
+          <div className="weather-city text-2xl -xsm:text-xl font-bold flex justify-center items-center">
             <FaLocationDot
               className="text-2xl mr-1"
               style={{ color: "#3c90d9" }}
