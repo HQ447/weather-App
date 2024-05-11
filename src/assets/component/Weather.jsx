@@ -63,9 +63,7 @@ function Weather() {
         </button>
       </div>
       {error && (
-        <p className=" w-full flex justify-center text-xl my-6 font-bold">
-          {error}
-        </p>
+        <p className=" w-full flex justify-center my-6 font-bold">{error}</p>
       )}
       {weather && weather.weather && (
         <div className="content flex flex-col gap-4 justify-center items-center ">
