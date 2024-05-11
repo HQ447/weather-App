@@ -62,9 +62,7 @@ function Weather() {
           <FaMagnifyingGlassLocation className="text-2xl" />
         </button>
       </div>
-      {error && (
-        <p className=" w-full flex justify-center my-6 font-bold">{error}</p>
-      )}
+      {error && <p className=" w-full flex justify-center my-6 ">{error}</p>}
       {weather && weather.weather && (
         <div className="content flex flex-col gap-4 justify-center items-center ">
           <div className="weather-image">
